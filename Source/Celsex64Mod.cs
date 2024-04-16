@@ -8,9 +8,7 @@ using Buttplug.Core.Messages;
 
 namespace FujiCodeMod;
 
-// For code mods, you must have a class extending from Fuji's GameMod class. This is the entry point of your mod.
-// Rename this class and file to better reflect your own mod.
-public class TemplateGameMod : GameMod
+public class Celsex64Mod : GameMod
 {
 	// This template includes some common functions:
 	public static ButtplugClient client = new ButtplugClient("Celsex64");
