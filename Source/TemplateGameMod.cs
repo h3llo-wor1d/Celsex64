@@ -123,9 +123,8 @@ public class TemplateGameMod : GameMod
 
 	public override void AddModSettings(ModOptionsMenu settingsMenu)
 	{
-		settingsMenu.Add(new Menu.Option((Loc.Unlocalized)RefreshText, () => {
-			isRefreshing = !isRefreshing;
-			if (isRefreshing) Task.Run(async () => await ScanForDevices());
+		settingsMenu.Add(new Menu.Option((Loc.Unlocalized)"Refresh Devices", () => {
+			Task.Run(async () => await ScanForDevices());
 		}));
 		settingsMenu.Add(new Menu.OptionList((Loc.Unlocalized)"Select Device",
 		() => stringList,
