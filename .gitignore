@@ -1,0 +1,9 @@
+.vs
+bin
+obj
+Libraries
+Release
+*.zip
+*.sln
+*.csproj.user
+Source/Celeste64.dll
